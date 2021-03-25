@@ -3,6 +3,9 @@
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
+<h2>@ViewBag.unInt</h2>
+<h2>@ViewBag.unaFecha.ToString("dd/MM/yyyy")</h2>
+<h2>@ViewData["mensaje"]</h2>
 
 <address>
     One Microsoft Way<br />
@@ -15,3 +18,8 @@
     <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
     <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
 </address>
+
+<form action="/home/contact" method="post">
+    <input type="number" name="edad" id="edad" />
+    <input type="submit" value="enviar" />
+</form>
